@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import App from '@/App.vue'
 import routes from '@/routes'
 import store from '@/store'
+import i18n from '@/i18n'
 
 import msToMm from '@/filters/ms-to-mm'
 import blur from '@/directives/blur'
@@ -23,5 +24,6 @@ new Vue({
   el: '#app',
   render: h => h(App),
   router,
-  store
+  store,
+  i18n
 })
